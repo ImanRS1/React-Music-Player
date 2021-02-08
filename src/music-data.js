@@ -84,3 +84,5 @@ const chillHop = () => {
     },
   ];
 };
+
+export default chillHop;
