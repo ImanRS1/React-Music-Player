@@ -6,7 +6,7 @@ import MusicData from "./music-data";
 
 function App() {
   const [songs, setSongs] = useState(MusicData());
-  const [currentSong, setCurrentSong] = useState(songs[0]);
+  const [currentSong, setCurrentSong] = useState(songs[3]);
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
