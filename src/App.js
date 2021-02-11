@@ -4,6 +4,7 @@ import Song from "./components/Song";
 import "./styles/app.scss";
 import MusicData from "./music-data";
 import Library from "./components/Library";
+import Nav from "./components/Nav";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <div className="App">
+      <Nav />
       <Song currentSong={currentSong} />
       <Player
         setSongInfo={setSongInfo}
