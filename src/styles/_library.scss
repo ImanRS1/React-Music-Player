@@ -57,3 +57,8 @@
 .selected {
   background-color: lightgreen;
 }
+
+.active-library {
+  transform: translateX(0%);
+  opacity: 1;
+}
