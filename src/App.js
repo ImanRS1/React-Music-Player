@@ -9,7 +9,7 @@ import Nav from "./components/Nav";
 function App() {
   const audioRef = useRef(null);
   const [songs, setSongs] = useState(MusicData());
-  const [currentSong, setCurrentSong] = useState(songs[3]);
+  const [currentSong, setCurrentSong] = useState(songs[0]);
   const [isPlaying, setIsPlaying] = useState(false);
   const [songInfo, setSongInfo] = useState({
     currentTime: 0,
@@ -39,9 +39,15 @@ function App() {
   };
 
   return (
-    <div className={`App ${libraryStatus ? "library-active" : ""}`}>
+    <div
+      className={`App ${libraryStatus ? "library-active" : ""}`}
+      style={{
+        background: `linear-gradient(135deg, ${currentSong.color[0]}, ${currentSong.color[1]})`,
+        height: "100vh",
+      }}
+    >
       <Nav setLibraryStatus={setLibraryStatus} libraryStatus={libraryStatus} />
-      <Song currentSong={currentSong} />
+      <Song currentSong={currentSong} isPlaying={isPlaying} />
       <Player
         setSongInfo={setSongInfo}
         songInfo={songInfo}

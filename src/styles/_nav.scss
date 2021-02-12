@@ -1,5 +1,5 @@
 nav {
-  min-height: 10vh;
+  height: 10%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -10,9 +10,13 @@ nav {
     border: 2px solid rgb(65, 65, 65);
     padding: 0.5rem;
     transition: all 0.3s ease;
+    background: white;
     &:hover {
       background: rgb(65, 65, 65);
       color: white;
+    }
+    &:focus {
+      outline: none;
     }
   }
 }
