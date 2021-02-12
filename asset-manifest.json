@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/React-Music-Player/static/css/main.281dfec5.chunk.css",
-    "main.js": "/React-Music-Player/static/js/main.51c1ac9b.chunk.js",
-    "main.js.map": "/React-Music-Player/static/js/main.51c1ac9b.chunk.js.map",
+    "main.js": "/React-Music-Player/static/js/main.25f9d47d.chunk.js",
+    "main.js.map": "/React-Music-Player/static/js/main.25f9d47d.chunk.js.map",
     "runtime-main.js": "/React-Music-Player/static/js/runtime-main.1aa18af0.js",
     "runtime-main.js.map": "/React-Music-Player/static/js/runtime-main.1aa18af0.js.map",
     "static/js/2.dbad9520.chunk.js": "/React-Music-Player/static/js/2.dbad9520.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.1aa18af0.js",
     "static/js/2.dbad9520.chunk.js",
     "static/css/main.281dfec5.chunk.css",
-    "static/js/main.51c1ac9b.chunk.js"
+    "static/js/main.25f9d47d.chunk.js"
   ]
 }
