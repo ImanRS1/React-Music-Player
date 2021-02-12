@@ -18,7 +18,7 @@ const chillHop = () => {
         "https://chillhop.com/wp-content/uploads/2020/09/2899f7cc22ab12e17d0119819aac3ca9dbab46e6-1024x1024.jpg",
       artist: "Philanthrope, Chromonicci",
       audio: "https://mp3.chillhop.com/serve.php/?mp3=10263",
-      color: ["#40462A", "#CA4C3E"],
+      color: ["#CA4C3E", "#40462A"],
       id: uudv4(),
       active: false,
     },
