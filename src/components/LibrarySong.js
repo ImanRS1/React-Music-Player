@@ -8,16 +8,18 @@ const LibrarySong = ({
   audioRef,
   isPlaying,
   setSongs,
+  libraryStatus,
+  setLibraryStatus,
 }) => {
-  const songSelectHandler = async() => {
+  const songSelectHandler = async () => {
     const selectedSong = songs.filter((state) => state.id === id);
-    await setCurrentSong(selectedSong[0] );
+    await setCurrentSong(selectedSong[0]);
     const newSongs = songs.map((song) => {
       if (song.id === id) {
         return {
           ...song,
           active: true,
-        };              
+        };
       } else {
         return {
           ...song,
@@ -26,6 +28,16 @@ const LibrarySong = ({
       }
     });
     setSongs(newSongs);
+
+    let currentWidth = window.matchMedia("(max-width: 768px)");
+    const mobileViewWatcher = (mobileWidth) => {
+      if (mobileWidth.matches) {
+        setLibraryStatus(!libraryStatus);
+      }
+    };
+    mobileViewWatcher(currentWidth);
+    currentWidth.addListener(mobileViewWatcher);
+
     if (isPlaying) audioRef.current.play();
   };
 
