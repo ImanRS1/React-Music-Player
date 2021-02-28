@@ -47,7 +47,11 @@ function App() {
       }}
     >
       <Nav setLibraryStatus={setLibraryStatus} libraryStatus={libraryStatus} />
-      <Song currentSong={currentSong} isPlaying={isPlaying} />
+      <Song
+        currentSong={currentSong}
+        isPlaying={isPlaying}
+        songInfo={songInfo}
+      />
       <Player
         setSongInfo={setSongInfo}
         songInfo={songInfo}
